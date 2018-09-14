@@ -1,1 +1,29 @@
 // Styles
+
+@import 'variables';
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+h1 {
+	font-family: "Montebello-Script";
+}
+
+h2, h3 {
+	font-family: "Montebello-Rounded";
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+p {
+	font-family: $p-font;
+}
