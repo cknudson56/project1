@@ -10,7 +10,6 @@
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -58,8 +57,11 @@ nav {
 		list-style-type: none;
 		display: flex;
 		justify-content: space-around;
-		width: 70%;
 		padding-top: 40px;
+
+		@media (min-width:900px) {
+			width: 70%;
+		}
 
 		@media (max-width:899px) {
 			visibility:hidden;
@@ -287,16 +289,21 @@ aside {
 }
 
 footer {
+	margin-top: 20px;
+	background-color: $dark-blue;
+
 	ul, p {
 		text-align: center;
 	}
 
 	ul {
 		list-style-type: none;
+		padding-top: 15px;
 		
 		li {
 			display: inline;
 			font-family: $p-font;
+			padding: 2%;
 			
 			a {
 				color: $orange;
@@ -312,10 +319,13 @@ footer {
 	
 	h2 {
 		color: $white;
+		padding: 8px 0 15px 0;
 	}
 	
 	p {
 		color: $orange;
+		padding-bottom: 15px;
+		font-size: 0.8rem;
 
 		a {
 			color: $orange;
