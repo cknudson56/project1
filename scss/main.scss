@@ -238,19 +238,48 @@ main {
 }
 
 aside {
+	background-color: $bg-blue;
+
 	h2 {
 		color: $black;
+		padding-top: 20px;
 	}
 
 	.aside-flex {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		padding-bottom: 20px;
 
 		.aside-detail {
+			width: 90%;
+			padding: 20px 2% 0 2%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: wrap;
+
+			@media (min-width: 700px) {
+				width: 40%;
+				max-width: 355px;
+			}
 
 			.aside-img {
-				width: 280px;
+				width: 300px;
+
+				@media (min-width: 700px) {
+					width: 250px;
+				}
+
+				@media (min-width: 900px) {
+					width: 350px;
+				}
+			}
+
+			p {
+				text-align: center;
+				padding-top: 5px;
+				max-width: 547px;
 			}
 		}
 	}
