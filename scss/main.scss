@@ -27,3 +27,113 @@ h1, h2, h3 {
 p {
 	font-family: $p-font;
 }
+
+@mixin transition($property) {
+		-webkit-transition: $property;
+		-moz-transition: $property;
+	transition: $property;
+}
+
+nav {
+	img {
+		width: 200px;
+	}
+
+	ul{
+		list-style-type: none;
+
+		li{
+			display: inline;
+			font-family: $p-font;
+
+			a {
+				color: $black;
+				text-decoration: none;
+				@include transition(color 0.3s ease);
+			}
+
+			a:hover {
+				color: $blue;
+			}
+
+		}
+	}
+}
+
+header {
+	
+}
+
+%button {
+	color: $orange;
+	padding: 5px;
+//	border-radius: ;
+}
+
+main {
+	p {
+
+	}
+	
+	h2 {
+		@extend %button;
+	}
+}
+
+aside {
+	.aside-flex {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.aside-detail {
+
+			.aside-img {
+				width: 280px;
+			}
+		}
+	}
+
+}
+
+footer {
+	ul, p {
+		text-align: center;
+	}
+
+	ul {
+		list-style-type: none;
+		
+		li {
+			display: inline;
+			font-family: $p-font;
+			
+			a {
+				color: $orange;
+				text-decoration: none;
+				@include transition(color 0.3s ease);
+			}
+			
+			a:hover {
+				color: $white;
+			}
+		}
+	}
+	
+	h2 {
+		color: $white;
+	}
+	
+	p {
+		color: $orange;
+
+		a {
+			color: $orange;
+			@include transition(color 0.3s ease);
+		}
+
+		a:hover {
+			color: $white;
+		}
+	}
+}
