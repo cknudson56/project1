@@ -8,8 +8,19 @@ $black: #393d3f;
 $bg-blue: #8db0b2;
 
 
-@import '../fonts/Montebello-Script.ttf';
-@import '../fonts/Montebello-Rounded.ttf';
+// @import '../fonts/Montebello-Script.ttf';
+// @import '../fonts/Montebello-Rounded.ttf';
+
+@font-face {
+    font-family: 'Montebello Script';
+    src: url(../fonts/Montebello-Script.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montebello Rounded';
+    src: url(../fonts/Montebello-Rounded.ttf) format('truetype');
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 $p-font: 'Montserrat', sans-serif;

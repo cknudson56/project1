@@ -13,13 +13,13 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 h1 {
-	font-family: "Montebello-Script";
+	font-family: 'Montebello Script';
 	color: $blue;
 	font-size: 2.5rem;
 }
 
 h2, h3 {
-	font-family: "Montebello-Rounded";
+	font-family: "Montebello Rounded";
 }
 
 h1, h2, h3 {
@@ -253,6 +253,11 @@ aside {
 		justify-content: center;
 		padding-bottom: 20px;
 
+		@media (max-width: 1690px) {
+			max-width: 900px;
+			margin: auto;
+		}
+
 		.aside-detail {
 			width: 90%;
 			padding: 20px 2% 0 2%;
@@ -302,7 +307,7 @@ footer {
 		
 		li {
 			display: inline;
-			font-family: "Montebello-Rounded";
+			font-family: "Montebello Rounded";
 			font-size: 1.2rem;
 			padding: 2%;
 			
@@ -318,9 +323,22 @@ footer {
 		}
 	}
 	
-	h2 {
-		color: $white;
-		padding: 8px 0 15px 0;
+	#logo-type {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		h2 {
+			color: $white;
+			padding: 8px 5px 15px 5px;
+		}
+
+		.script-font {
+			font-family: 'Montebello Script'
+		}
+		.v-align {
+			align-self: center;
+		}
 	}
 	
 	p {
